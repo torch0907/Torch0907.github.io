@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Chun-Yen's Portfolio</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
+	<link rel="stylesheet" href="css/globe.css" type="text/css">
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53016786-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>
+    <!-- This conditional is for IE8 and IE6 and earlier- 8 needs that display:table -->
+    <!--[if !IE 7]>
+    <style type="text/css">
+        #wrap {display:table;height:100%}
+    </style>
+    <![endif]--><!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<script type="text/javascript">
+		// DOM Ready
+		function show(n) {
+			$('#nav li').removeClass('current');
+			$('#nav-'+n).addClass('current');
+			$('.inner').hide();
+			$('#inner-'+n).fadeIn(1000);
+		}
+
+
+		$(document).ready(function() {
+			$(".fancybox-thumb").fancybox({
+			});
+		});
+
+	</script>
+
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+	<h1><span></span>CHUN-YEN HSIEH</a></h1>
+		<div id="navbar">
+			<ul id="nav">
+				<li class="current" id="nav-1" onclick="show(1)">Game Projects</li>
+				<li id="nav-2" onclick="show(2)">UI Projects</li>
+				<li id="nav-3" onclick="show(3)">ID Projects</li>
+				<li id="nav-5" onclick="show(5)">About</li>
+			</ul>
+		</div>
+	</div>
+	<div id="main">
+		<div class="inner" id="inner-1">
+			<h3>碰碰星球</h3>
+			<h4>The Beaters. 2017/11</h3>	
+			<div class="thumb thumb-1" >
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/beaters_0.png" title="Home"><img src="img/game/beaters_0.png"></a>
+			</div>
+			<div class="thumb thumb-1" >
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/beaters_1.png" title="Home"><img src="img/game/beaters_1.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/beaters_2.png" title="Media"><img src="img/game/beaters_2.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/beaters_3.png" title="Media"><img src="img/game/beaters_3.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/beaters_4.png" title="Media"><img src="img/game/beaters_4.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/beaters_5.png" title="Media"><img src="img/game/beaters_5.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此為台灣Akatsuki第一款自製遊戲，在此專案負責了PM、製作人、美術指導與UI/UX設計師職務。</li>
+					<li>＊2016.11獲得Google Play精選遊戲推薦於台灣、美國、巴西、印度、俄羅斯等市場。</li>
+					<li>This is the first original mobile game from Akatsuki Taiwan. I played the roles of project manager, producer, art director and UI designer in this project.</li>
+					<li>＊2016.11 Got Featured in Google Play Taiwan, USA, Brazil, India, Russia...ect markets.</li>
+				</ul>
+			</div>
+			<h3>七龍珠爆裂激戰</h3>
+			<h4>Dragon Ball Z Dokkan Battle. 2015/07</h3>	
+			<div class="thumb thumb-1" >
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/game/dokkan1.jpeg" title="Home"><img src="img/game/dokkan1.jpeg"></a>
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/game/dokkan2.jpeg" title="Home"><img src="img/game/dokkan2.jpeg"></a>
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/game/dokkan3.jpeg" title="Home"><img src="img/game/dokkan3.jpeg"></a>
+			</div>
+			<div class="thumb thumb-1" >
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/banner1.png" title="Home"><img src="img/game/banner1.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/banner2.png" title="Home"><img src="img/game/banner2.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/banner3.png" title="Home"><img src="img/game/banner3.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/banner4.png" title="Home"><img src="img/game/banner4.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/banner5.png" title="Home"><img src="img/game/banner5.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/banner6.png" title="Home"><img src="img/game/banner6.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此專案為在地化專案，從日本總公司接手日本版後重製成中英法三國語言，在此專案擔任主設計並指導所有設計相關工作內容，包含所有UI調整、動畫重製、活動Banner製作等。</li>
+					<li>＊獲得Google Play Award 2015最佳全球化遊戲提名。</li>
+					<li>This is a localization project from Japan headquarter. I was the designer leader of this project and took charge of the localization of  Chinese, English, French version. Including UI adjustment, animation remake, event banner redesign. </li>
+					<li>＊Got Google Play Go Global Awards 2015 Nominate</li>
+				</ul>
+			</div>
+			<h3>足球甜心</h3>
+			<h4>Cinderella Eleven. 2015/02</h3>	
+			<div class="thumb thumb-1" >
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/cin11_1.jpg" title="Home"><img src="img/game/cin11_1.jpg"></a>
+			</div>
+			<div class="thumb thumb-1" >
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/cin11_2.png" title="Home"><img src="img/game/cin11_2.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/cin11_3.png" title="Home"><img src="img/game/cin11_3.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/cin11_4.png" title="Home"><img src="img/game/cin11_4.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/cin11_5.png" title="Home"><img src="img/game/cin11_5.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/game/cin11_6.png" title="Home"><img src="img/game/cin11_6.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此專案為在地化專案，從日本總公司接手日本版後重製成中文版，在此專案擔任主設計並指導所有設計相關工作內容，包含所有UI調整、動畫重製、活動Banner製作等。</li>
+					<li>＊2014.12獲得Google Play精選遊戲推薦台港澳市場。</li>
+					<li>This is a localization project from Japan headquarter. I was the designer leader of this project and took charge of the localization of  Chinese version. Including UI adjustment, animation remake, event banner redesign. </li>
+					<li>＊2014.12 Got Featured in Google Play Taiwan, Hongkong, Macao markets.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="inner" id="inner-2">
+			<h3>未來車機介面設計概念</h3>
+			<h4>Future In-car system UI design. 2013/12</h3>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/iron_man1.png" title="Home"><img src="img/app/iron_man1.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/iron_man2.png" title="Media"><img src="img/app/iron_man2.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此為未來車機介面設計概念，包含首頁及多媒體播放頁面，以扁平化與藍色高光設計元素使整體介面具有高科技感。</li>
+					<li>This is a future In-car system UI design concept include a home page and a media page. The style is designed in “high-tech style” that use flat and blue Lighting design elements. </li>
+				</ul>
+			</div>
+			<h3>車機導航圖示設計</h3>
+			<h4>Navi icons design for in-car system. 2013/08</h3>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/real/food.png" title="food"><img src="img/app/real/food.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/real/parking.png" title="parking"><img src="img/app/real/parking.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/real/plane.png" title="plane"><img src="img/app/real/plane.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/real/shopping.png" title="shopping"><img src="img/app/real/shopping.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/real/spell.png" title="spell"><img src="img/app/real/spell.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此為導航景點分類之圖示設計，配合車廠需求整體風格以擬真為主。</li>
+					<li>These are POI categorys icon design. The style is realistic due to the motor company's demand.</li>
+				</ul>
+			</div>
+			<h3>雙鐵時刻表APP</h3>
+			<h4>Taiwan railways information App for iphone. 2013/04</h3>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/app/ticket/ticket_index.png" title="index"><img src="img/app/ticket/ticket_index.png"></a>
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/app/ticket/ticket1.png" title="railway"><img src="img/app/ticket/ticket1.png"></a>
+			</div>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/ticket/ticket2.png" title="high speed rail"><img src="img/app//ticket/ticket2.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/ticket/ticket3.png" title="interchange"><img src="img/app/ticket/ticket3.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/ticket/ticket4.png" title="rapid transit"><img src="img/app/ticket/ticket4.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/ticket/ticket1-2.png" title="detail page"><img src="img/app/ticket/ticket1-2.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/ticket/ticket2-1.png" title="detail page"><img src="img/app/ticket/ticket2-1.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此為舊有台鐵高鐵時刻表App之改版，舊有的首頁、查詢頁與結果頁經重新設計與排版，並加入顏色分類使整個App的各功能頁面更有一致性，在iOS新版本釋出後即在當週達到旅遊類App下載排行第一名。</li>
+					<li>＊榮獲2013 App Next應用程式創新大賽最佳人氣app獎。</li>
+					<li>This is a taiwan railway information App. I reformed the whole App including the home page, searching function and how the searching result shows. Also I made the App more well organized and consistent by using color mapping. This App became top 1 in tourism category when this new iOS version has been released. This App also win the Best Popular App Award of App Next 2013 Competition.</li>
+					<li>＊The Best Popular App Award of App Next 2013 Competition.</li>
+				</ul>
+			</div>
+			<h3>3D網頁操控盤</h3>
+			<h4>3D website control panel design. 2012/11</h3>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/app/plate_02.png" title="plate"><img src="img/app/plate_02.png"></a>
+			</div>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/plate_01.png" title="plate"><img src="img/app/plate_01.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/plate_03.png" title="plate"><img src="img/app/plate_03.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此為3D概念網頁模版設計，使用者能夠以多指觸控放大縮小物件，或是觸發特定動作來感受如同在3D空間中操作網頁。</li>
+					<li>This is a concept design of 3D website template. Users can pinch to zoom or to activate certain subroutines attached to predefined gestures just like in 3D space.</li>
+				</ul>
+			</div>
+			<h3>王力宏個人官方APP</h3>
+			<h4>Leehom Wang officail APP for iphone. 2012/08</h3>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/app/LH_02.png" title="index"><img src="img/app/LH_02.png"></a>
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/app/LH_03.png" title="schedule list"><img src="img/app/LH_03.png"></a>
+			</div>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/LH_04.png" title="album"><img src="img/app/LH_04.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/LH_05.png" title="album"><img src="img/app/LH_05.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/LH_07.png" title="video detail"><img src="img/app/LH_07.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此為著名華人歌手王力宏之官方App，整體架構簡單易用，並設計讓粉絲能夠直接下載照片、觀看影音與查詢行程等功能。</li>
+					<li>This is the official App of Leehom Wang who is a famous artist in greater china area. The structure of this App is very user friendly. His fans can easily download pics, watch videos and check schedules of Leehom Wang through this App.</li>
+				</ul>
+			</div>
+			<h3>網路數位電視App</h3>
+			<h4>Wifi TV App for iPad. 2012/07</h4>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/app/ITE_02.png" title="channel list"><img src="img/app/ITE_02.png"></a>
+			</div>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/ITE_01.png" title="Loading"><img src="img/app/ITE_01.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/ITE_03.png" title="TV control"><img src="img/app/ITE_03.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/ITE_04.jpg" title="setting"><img src="img/app/ITE_04.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/ITE_07.png" title="password"><img src="img/app/ITE_07.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此為針對iPad之數位電視App設計，使用者可以直接在iPad上觀看電視節目與查詢節目表等，整體風格走向以能夠融入當時iOS 6的設計風格為主。</li>
+					<li>This is a digital TV App for iPad. Users can watch TV and check EPG through this App. The style of this App is designed to fit the iOS 6 style.</li>
+				</ul>
+			</div>
+			<h3>上海商銀內部資訊系統App</h3>
+			<h4>SCSB dashboard App for iPad. 2012/06</h4>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/app/SCSB_01.png" title="login page"><img src="img/app/SCSB_01.png"></a>
+			</div>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/SCSB_03.png" title="page 1"><img src="img/app/SCSB_03.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/SCSB_04.png" title="page 2"><img src="img/app/SCSB_04.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/SCSB_05.png" title="page 3"><img src="img/app/SCSB_05.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/SCSB_06.png" title="page 4"><img src="img/app/SCSB_06.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/SCSB_07.png" title="page 5"><img src="img/app/SCSB_07.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/SCSB_08.png" title="page 6"><img src="img/app/SCSB_08.png"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/app/SCSB_09.png" title="page 7"><img src="img/app/SCSB_09.png"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此為上海商銀內部連線狀態監控App，透過此App內部人員能夠即時掌握國內外分行連線狀態，整體設計主要以紅黃綠三種顏色燈號來表示目前連線是否有問題。</li>
+					<li>This App is for monitoring the connection status of internet of the bank, including the headquater and its branches. It's easy to tell if there is any problem by three colors.</li>
+				</ul>
+			</div>
+			<h3>美麗信酒店數位看板操作介面</h3>
+			<h4>Miramar Garden Hotel Signage Flash Design. 2010/03</h4>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/flash/mer_01.jpg"><img src="img/flash/mer_01.jpg"></a>
+				<a class="fancybox-thumb big" rel="fancybox-thumb" href="img/flash/mer_02.jpg"><img src="img/flash/mer_02.jpg"></a>
+			</div>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/flash/mer_03.jpg"><img src="img/flash/mer_03.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/flash/mer_04.jpg"><img src="img/flash/mer_04.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/flash/mer_05.jpg"><img src="img/flash/mer_05.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/flash/mer_06.jpg"><img src="img/flash/mer_06.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/flash/mer_08.jpg"><img src="img/flash/mer_08.jpg"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>此為與研華科技產學合作之美麗信酒店數位看板介紹介面，整體過程從一開使的使用者研究、流程規劃、到圖面設計與FLASH程式皆為獨立執行完成。</li>
+					<li>This is an introduction interface sponsored by Advantech for Miramar Garden Taipei Hotel. From the first beginning of the project to the end, I have done all the tasks by myself, including the user research, graphic design and flash program.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="inner" id="inner-3">
+			<h3>CLOSER</h3>
+			<h4>12th National University Students Master Design Award, Silver Prize.</h4>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/closer_01.jpg"><img src="img/industrial/closer_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/closer_02.jpg"><img src="img/industrial/closer_02.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/closer_03.jpg"><img src="img/industrial/closer_03.jpg"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>為了教育並提醒兒童節約用電，本概念將無形的電流概念轉化為較容易理解的水流概念，並直接放置於電器旁，讓兒童使用完電器後能方便關閉，另一方面也可免去接觸家中插座的危險。所使用之電費將會直接顯示在螢幕上，因此兒童可以容易理解到浪費電力等於浪費金錢。</li>
+					<li>In order to educate our children economize the use of electricity. The concept of CLOSER is to turn the intangible electric current into the easy understanding water current. And put near by the electric appliances, children can turn the power off easily after use and avoid the dangerous of touching socket. The bill of electricity will display on the screen and children can easily understand electric waste is money waste.</li>
+				</ul>
+			</div>
+			<h3>CUPULE LIGHT</h3>
+			<h4>iF Concept Award 2010.</h4>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/cupule-light_01.jpg"><img src="img/industrial/cupule-light_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/cupule-light_02.jpg"><img src="img/industrial/cupule-light_02.jpg"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>在夜晚時，我們不論在任何地點從事任何活動皆需要光線的照明，而當我們在家中須要從此處到彼處時，我們就必須先關掉此處的燈光，再開啟彼處的燈光，許多能源就耗費於這些開啟關閉之間，更別說我們還可能會忘記關掉燈光。在本概念中希望能讓家中光源變成可攜式，且可以吸附於窗戶或書櫃等平滑表面，不需要另行開啟其他燈光即可在所需地點從事活動，不僅便利也達到了環保的功效。</li>
+					<li>In the night we need the light when doing anything in everywhere. When we want to go around at home. We need to turn off the light where we stayed and turn on the light where we will be in. Lots of energy is wasted between the actions. Even if we may forget to turn off the unused light. The concept of cupule light is to make people bring the light everywhere you need. It can stick on flat surface like windows or bookshelves. You don’t need to turn on extra light and can do activities everywhere you want. Cupule light is not only convenient but also environmental.</li>
+				</ul>
+			</div>
+			<h3>SPOONFULL</h3>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/spoonful_02.jpg"><img src="img/industrial/spoonful_02.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/spoonful_03.jpg"><img src="img/industrial/spoonful_03.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/spoonful_04.jpg"><img src="img/industrial/spoonful_04.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/spoonful_05.jpg"><img src="img/industrial/spoonful_05.jpg"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>自古以來槓桿原理就被運用在許多用具中，而在科技進步的現代，許多產品都已被逼迫走向數位化一路，運用簡單原理而設計的產品越來越少。本概念透過槓桿原理的方式，達到同時量測並擷取所需重量的功能，希望能以最簡單的方式準確量測中藥或是調味料等物品的份量。</li>
+					<li>Lever Principle has applied to many tools. In the era of technology, lots of products are forced to digitalization, so products designed by simple theory have much less been seen nowadays. Using Spoonful can simultaneously measure and get the weight you need. It is the easiest way to accurately weigh the quantity of powder-like objects such as Chinese herbal medicine or seasoning.</li>
+				</ul>
+			</div>
+			<h3>AIR LUGGAGE</h3>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/Barometric_01.jpg"><img src="img/industrial/Barometric_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/Barometric_02.jpg"><img src="img/industrial/Barometric_02.jpg"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>本概念是一款外層以充氣式橡膠材質包覆之登機箱，其外表之充氣層會因為飛機升空時機艙壓力的改變而自動膨脹形成防護，因此相較於一般硬式登機箱而言，擁有更加輕盈且更能夠保護箱內物品之優點。</li>
+					<li>Air-Luggage is  a boarding case which is covered by inflatable rubber. The inflatable rubber will inflate automatically because of the different pressure in the cabin and ground. Air-Luggage is lighter than hard shell luggage and has better ability to protect personal belongings.</li>
+				</ul>
+			</div>
+			<h3>DOT TO DOT</h3>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/dot_01.jpg"><img src="img/industrial/dot_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/dot_02.jpg"><img src="img/industrial/dot_02.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/dot_03.jpg"><img src="img/industrial/dot_03.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/dot_04.jpg"><img src="img/industrial/dot_04.jpg"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>本概念為在3D空間中進行的連連看遊戲所形成之椅子。組裝方式為先以平板式壓克力構件組裝成支撐架，再透過連連看的方式完成索網的配置。組裝過程不需要使用任何工具或黏接劑，因此就算是兒童也能夠安全的組裝完成。</li>
+					<li>Do t to Dot is a chair fabricated  by dot to dot game in three dimensional space. The assembly method is to build a frame by plate type acrylic component first, and complete the cable net through dot to dot game. You don’t need a tool or adhesives in fabricating process. Even a child can fix it safety.</li>
+				</ul>
+			</div>
+			<h3>MULLION FRAME</h3>
+			<h4>Taiwan Creative Design Competition, Award of Honorable Mention.</h4>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/mullion_01.jpg"><img src="img/industrial/mullion_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/mullion_02.jpg"><img src="img/industrial/mullion_02.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/mullion_03.jpg"><img src="img/industrial/mullion_03.jpg"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>眼睛是靈魂之窗，而對於近視者來說眼鏡就如眼睛之窗，透過眼鏡可以窺見世界。本概念藉由古今兩項的物品結合，讓原本大家早已遺忘的中國窗櫺文化，能夠再次藉由新產品的應用而得到新生與重視，也讓傳統文化所寓含的意義能夠發揚光大。</li>
+					<li>The eyes are the window to the soul, and eyeglasses are the window to the eyes for myopia. They see the world through it. The concept of Mullion Frame is to combine old and new article, and let people recall the traditional Chinese lattice window culture. Hope it can get rebirth and attention from applying to new product design. And let the implied meaning from traditional culture be able to enhance and glorify.</li>
+				</ul>
+			</div>
+			<h3>CLEAN</h3>
+			<h4>2nd Uneec Applied Design Award, Silver Award.</h4>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/clean_02.jpg"><img src="img/industrial/clean_02.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/clean_03.jpg"><img src="img/industrial/clean_03.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/clean_04.jpg"><img src="img/industrial/clean_04.jpg"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>世界上許多國家皆已邁入高齡化社會，高齡者人口比例越來越高，而高齡者因老化所衍生的各種不便是目前社會上所必須解決的重要議題。其中肌力衰退是老化所帶來的嚴重影響之一，高齡者會因肌力退化而造成身體平衡感變差，與無法大量施力，這就產生了在浴室時不易擰乾毛巾與容易因地面濕滑而跌倒等問題。乾淨是一款設計於浴室使用之除濕機，透過除濕排放的熱風烘乾毛巾並保持浴室地面乾燥，以解決高齡者在浴室時的危險與不便。</li>
+					<li>Many countries in the world have gone into aging society alreadry, percentage of the elderly in total population is increasing. The derivative problems from aging are the most important issue in society. Muscle recession is one of the serious impact of aging. The elderly would be balance deteriorated and can’t make large effort, those make the problems of can’t wring towel or easy to fall down in the bathroom. Dry & Clean is a dehumidifier which designed to use in the bathroom. It can dry the towel through the dry air discharged by dehumidification and keep the ground dry. So the problem of the elderly in the bathroom would be solved.</li>
+				</ul>
+			</div>
+			<h3>QUENENERGY</h3>
+			<div class="thumb thumb-1">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/queue_01.jpg"><img src="img/industrial/queue_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/queue_02.jpg"><img src="img/industrial/queue_02.jpg"></a>
+			</div>
+			<div class="thumb">
+				<ul class="about">
+					<li>酷能聚是一以排隊人潮為動力供電的護欄系統，整個系統以圍籬柱與壓電地磚組成；壓電地磚可將隊伍移動時產生的機械能轉化為電能，並提供給圍籬柱上的OLED螢幕與發光薄膜帶使用，以指引人群排隊過程。</li>
+					<li>Queuenergy is a kind of queue barrier system which depends on people who queue up to generate electric power. It’s constructed by rail columns and piezoelectric tiles. The piezoelectric tiles can transform the pressure which is caused by people moving in a line into electric energy. The electric energy can provide to the OLED screen and electroluminescent film to guide the queue process.</li>
+				</ul>
+			</div>
+			<h3>FESTIVAL BOWL</h3>
+			<h4>New Taipei City Product Design Competition, Award of Honorable Mention.</h4>
+			<div class="thumb">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/festival-bowl_01.jpg"><img src="img/industrial/festival-bowl_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/festival-bowl_02.jpg"><img src="img/industrial/festival-bowl_02.jpg"></a>
+			</div>
+			<h3>OTHER CONCEPT</h3>
+			<div class="thumb">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/yellow-red-light_01.jpg"><img src="img/industrial/yellow-red-light_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/yellow-red-light_02.jpg"><img src="img/industrial/yellow-red-light_02.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/yellow-red-light_03.jpg"><img src="img/industrial/yellow-red-light_03.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/sinage_01.jpg"><img src="img/industrial/sinage_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/cup_01.jpg"><img src="img/industrial/cup_01.jpg"></a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="img/industrial/farsight.jpg"><img src="img/industrial/farsight.jpg"></a>
+			</div>
+		</div>
+		<div class="inner" id="inner-5">
+			<div class="thumb">
+				<a class="fancybox-thumb" id="profile" rel="fancybox-thumb" href="img/profile.jpg"><img src="img/profile.jpg"></a>
+				<h3>謝俊彥</h3>
+				<h4>Chun-Yen, Hsieh</h4>
+				<h4>torch0907@gmail.com</h4>
+			</div>
+			<div class="thumb">
+				<h4>獲獎記錄</h4>
+				<ul class="about">
+					<li>2013.09 數位時代/2013 App Next 應用程式創新大賽/最佳人氣App獎</li>
+					<li>2010.03 2010德國iF概念設計獎/得獎者</li>
+					<li>2009.12 文建會/創意元素設計競賽/優選</li>
+					<li>2009.09 張江杯/12th全國大學生設計大師獎/銀獎</li>
+					<li>2009.09 研華文教基金會/Early Design 創新設計競賽/銀質獎</li>
+					<li>2008.12 晟銘電子/第二屆晟銘盃應用設計大賽/銀獎</li>
+				</ul>
+				<h4>AWARDS</h4>
+				<ul class="about">
+					<li>App Next 2013 Competition, Best Popular App Award, Business Next Publishing Corp., Taiwan, 09/2013</li>
+					<li>iF Concept Award 2010, Award Winner, International Forum Design Hannover, German, 03/2010</li>
+					<li>Creative Design Competition, Award of Honorable Mention, Council for Cultural Affairs, Taiwan, 12/2009</li>
+					<li>12th National University Students Master Design Award, Silver Prize, National University Students Master Design Award Organizing Committee, China, 10/2009</li>
+					<li>Early Design Innovation Design Campaign, Silver Prize, Advantech Foundation, Taiwan, 09/2009</li>
+					<li>2nd Uneec Applied Design Award, Silver Award, Chenming Mold Ind.Corp, Taiwan, 12/2008</li>
+				</ul>
+			</div>
+			<div class="thumb">
+				<h4>工作經歷</h4>
+				<ul class="about">
+					<li>2014.09～ present 台灣曉數碼股份有限公司(Akatsuki)/UI/UX設計總監</li>
+					<li>2012.11～2014.09 台灣國際航電(Garmin)/工程部使用者經驗團隊專員</li>
+					<li>2012.06～2012.10 宇軒數位(Nexdoor)/視覺設計師</li>
+					<li>2009.07～2009.09 研華科技/AiS智能服務部門/暑期實習</li>
+				</ul>
+				<h4>WORK EXPERIENCE</h4>
+				<ul class="about">
+					<li>Akatsuki Taiwan Inc., Lead UI/UX Designer, 2014.09～present</li>
+					<li>Garmin Corporation, User Experience Team Specialist, 2012.11～2014.9</li>
+					<li>Nexdoor Inc., Graphic User Interface Designer, 2012.06～2012.10</li>
+					<li>Advantech Co., Intelligent Services Division(Ais), Summer Internship, 2009.07～2009.09</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div id="footer">
+	All works © Chun-Yen Hsieh. Best view with 1024x768 up.
+</div>
+</body>
+</html>	
